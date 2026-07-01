@@ -31,6 +31,9 @@ Penetration test of the Kioptrix Level 1 boot2root VM, performed end-to-end: net
 | Outdated, EOL Apache/OpenSSL stack | Multiple | Medium |
 | `/etc/shadow` readable post-compromise, weak MD5-crypt hashes | — | High (impact) |
 
+**Vulnerability research — confirming exploitable Samba/mod_ssl versions via Searchsploit:**
+![Searchsploit results](./screenshots/carbon9.png)
+
 ## Exploitation Summary
 
 ```
@@ -46,6 +49,12 @@ root
 ```
 
 The default staged payload failed due to SSL/negotiation interference; switching to the unstaged `shell_reverse_tcp` payload resolved this and produced a stable root shell.
+
+**Exploit execution — reverse shell sessions opening:**
+![Exploit execution](./screenshots/carbon12.png)
+
+**Root access confirmed:**
+![Root access confirmed](./screenshots/carbon13.png)
 
 ## Post-Exploitation Impact
 
@@ -65,7 +74,7 @@ The default staged payload failed due to SSL/negotiation interference; switching
 
 ## Full Report
 
-See [`Kioptrix_Level1_Pentest_Report.pdf`](./Kioptrix_Level1_Pentest_Report.pdf) for the complete report with full evidence, screenshots, and detailed findings.
+See [`Kioptrix_Level1_Pentest_Report.docx`](./Kioptrix_Level1_Pentest_Report.docx) for the complete report with full evidence, screenshots, and detailed findings.
 
 ---
 *Educational/lab exercise performed in an isolated environment against an intentionally vulnerable VM. Not performed against any production or third-party system.*
