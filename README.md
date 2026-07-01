@@ -74,7 +74,7 @@ The default staged payload failed due to SSL/negotiation interference; switching
 
 ## Full Report
 
-See [`Kioptrix_Level1_Pentest_Report.docx`](./Kioptrix_Level1_Pentest_Report.docx) for the complete report with full evidence, screenshots, and detailed findings.
+See [`Kioptrix_Level1_Pentest_Report.pdf`](./Kioptrix_Level1_Pentest_Report.pdf) for the complete report with full evidence, screenshots, and detailed findings.
 
 ---
 *Educational/lab exercise performed in an isolated environment against an intentionally vulnerable VM. Not performed against any production or third-party system.*
